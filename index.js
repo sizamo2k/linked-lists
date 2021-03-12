@@ -22,6 +22,20 @@ class LinkedList {
         this.head = null;
     }
 // add getFirst() and getLast() here
+
+getFirst(){
+    return this.head;
+}
+
+getLast() {
+    let lastNode = this.head;
+    if (lastNode) {
+        while (lastNode.next){
+            lastNode = lastNode.next
+        }
+    }
+    return lastNode
+}
 }
 
 let node1 = new ListNode(2)
